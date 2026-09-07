@@ -1,0 +1,251 @@
+.product-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Table */
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 750px;
+}
+
+.product-table th {
+  text-align: left;
+  padding: 14px 12px;
+
+  background: #f8f8fa;
+  color: #777;
+
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid #e8e8ec;
+}
+
+.product-table td {
+  padding: 15px 12px;
+
+  border-bottom: 1px solid #eeeeef;
+
+  font-size: 13px;
+  color: #333;
+}
+
+.product-table tbody tr:hover {
+  background: #fafafa;
+}
+
+/* Product */
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-image {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 8px;
+  overflow: hidden;
+
+  background: #f3f3f3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info strong {
+  display: block;
+
+  max-width: 250px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #222;
+}
+
+.product-info small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #999;
+  font-size: 10px;
+
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Category */
+
+.category {
+  display: inline-block;
+
+  padding: 5px 9px;
+
+  background: #f2f2f4;
+  border-radius: 5px;
+
+  font-size: 11px;
+  color: #555;
+}
+
+/* Discount */
+
+.discount {
+  display: inline-block;
+
+  padding: 5px 9px;
+
+  background: #eaf8ef;
+  color: #218642;
+
+  border-radius: 5px;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.no-discount {
+  color: #999;
+  font-size: 12px;
+}
+
+/* Actions */
+
+.action-buttons {
+  display: flex;
+  gap: 7px;
+}
+
+.edit-btn,
+.delete-btn {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+
+  font-size: 13px;
+}
+
+.edit-btn {
+  border: 1px solid #ddd;
+}
+
+.delete-btn {
+  border: 1px solid #f0cccc;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  background: #f5f5f5;
+}
+
+/* Product Count */
+
+.product-count {
+  padding-top: 15px;
+
+  color: #888;
+
+  font-size: 12px;
+}
+
+/* Loading */
+
+.products-status {
+  min-height: 280px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.products-status > div {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.products-status h3 {
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+
+.products-status p {
+  color: #888;
+  font-size: 13px;
+}
+
+.loader {
+  width: 35px;
+  height: 35px;
+
+  border: 3px solid #e5e5e5;
+  border-top-color: #111827;
+
+  border-radius: 50%;
+
+  animation: spin 0.8s linear infinite;
+}
+
+.products-status .loader {
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error */
+
+.products-status.error h3 {
+  color: #c0392b;
+}
+
+.retry-btn {
+  margin-top: 15px;
+
+  border: none;
+
+  background: #111827;
+  color: white;
+
+  padding: 9px 16px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.retry-btn:hover {
+  background: #333;
+}
