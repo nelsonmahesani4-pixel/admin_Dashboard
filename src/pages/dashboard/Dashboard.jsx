@@ -5,7 +5,7 @@ import {
   DollarSign,
 } from "lucide-react";
 
-import StatCard from "../components/StatCard";
+import StatCard from "../../components/StatCard";
 
 function Dashboard({ products }) {
   const totalProducts = products.length;
